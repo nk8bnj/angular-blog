@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-admin-layout',
@@ -10,7 +10,7 @@ export class AdminLayoutComponent {
   constructor(private router: Router) { }
 
   logout(event: Event) {
-    event.preventDefault();
-    this.router.navigate(['/admin', 'login']);
+    event.preventDefault()
+    this.router.navigate(['/admin', 'login'])
   }
 }

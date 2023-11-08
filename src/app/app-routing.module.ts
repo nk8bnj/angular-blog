@@ -1,8 +1,8 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
-import { HomePageComponent } from './home-page/home-page.component';
-import { PostPageComponent } from './post-page/post-page.component';
+import { NgModule } from '@angular/core'
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router'
+import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component'
+import { HomePageComponent } from './home-page/home-page.component'
+import { PostPageComponent } from './post-page/post-page.component'
 
 const routes: Routes = [
   {
@@ -19,7 +19,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./admin/admin.module').then((m) => m.AdminModule),
   },
-];
+]
 
 @NgModule({
   imports: [
@@ -27,4 +27,4 @@ const routes: Routes = [
   ],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
