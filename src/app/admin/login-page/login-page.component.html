@@ -38,8 +38,9 @@
         >Password is required</small
       >
       <small *ngIf="form.get('password')?.errors?.['minlength']"
-        >Minimum length - 6, Your input -
-        {{ form.get('password')?.value?.length }}</small
+        >Minimum length -
+        {{ form.get('password')?.errors?.['minlength'].requiredLength }}, Your
+        input - {{ form.get('password')?.value?.length }}</small
       >
     </div>
   </div>
