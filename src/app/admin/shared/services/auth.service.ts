@@ -22,7 +22,7 @@ export class AuthService {
     return this.http
       .post(
         `https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=${environment.apiKey}`,
-        user
+        user,
       )
       .pipe(tap(this.setToken as any));
   }
